@@ -15,6 +15,9 @@
     </properties>
     
     <dependencies>
+            <groupId>org.apache.commons</groupId>
+    <artifactId>commons-csv</artifactId>
+    <version>1.5</version>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
