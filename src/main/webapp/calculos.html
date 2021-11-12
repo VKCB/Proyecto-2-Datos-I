@@ -9,15 +9,23 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css"  href="layout_of_calculator.css" rel="stylesheet">
+        
     </head>
     <body>
-        <form action="datosCalculos.jsp">
+        <form action="resultado.jsp" id="formulario">
+            <h>  Por favor ingrese la expresion matematica para ser analizada </h6>
+            <input type="text" name="calculo" id="texto" required placeholder="Ecuacion Matematica">
+            <input type="submit" value="Calcular" id="boton">
+            <form action="datosCalculos.jsp"> 
+                <input type="submit" value="Registro" id="boton2">
+            </form>
             
-            <input type="text" name="calculo">
-            <input type="submit" value="Calcular">
             
             
         </form>
+        
+        
 
     </body>
-</html>
+</html>`

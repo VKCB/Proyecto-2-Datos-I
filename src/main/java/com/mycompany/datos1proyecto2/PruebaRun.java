@@ -10,11 +10,12 @@ import javax.swing.JOptionPane;
 public class PruebaRun {
     
     public static void main(String args[]){
-        String expresion, resultado;
+        //String expresion, 
+        String resultado;
         double solucion;
         
-        expresion=JOptionPane.showInputDialog("introduzca la expresion matematica");
-        resultado=Conversion_a_Postfijo.conversion(expresion);
+        //expresion=JOptionPane.showInputDialog("introduzca la expresion matematica");
+        resultado="15*8/4";
         solucion=Solucion.resolution(resultado);
         JOptionPane.showMessageDialog(null, resultado);
          JOptionPane.showMessageDialog(null, solucion);

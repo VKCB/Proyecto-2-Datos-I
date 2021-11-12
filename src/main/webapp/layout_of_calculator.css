@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 12, 2021, 12:36:36 AM
+    Author     : Familia Rayo
+*/
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: gray;
+    
+    
+}
+body{
+    
+    padding: 100px 500px;
+    font-size: 40px;
+    margin: auto;
+    margin-top: 100px;
+   
+    
+}
+
+
+#boton{
+    
+  
+   justify-content: center;
+    background-color: #11b987;
+    padding: 15px 150px;
+    
+
+
+    
+}
+
+#texto{
+    text-align: center;
+     padding: 20px 250px;
+     background: white;
+     
+    
+}
+
+#formulario{
+    width: 400px
+    
+}

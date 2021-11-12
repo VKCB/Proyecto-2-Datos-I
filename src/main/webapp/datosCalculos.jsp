@@ -14,7 +14,13 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <%= new java.util.Date()%>
         <%String expresion=request.getParameter("calculo");%>
-        <%=Conversion_a_Postfijo.conversion(expresion)%>
+        <% String post=Conversion_a_Postfijo.conversion(expresion);%>
+       <%=Conversion_a_Postfijo.conversion(expresion)%>
+        <%=Solucion.resolution(post)%>
+        
+        
+        
     </body>
 </html>
