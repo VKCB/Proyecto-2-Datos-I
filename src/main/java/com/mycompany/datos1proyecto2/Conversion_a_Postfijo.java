@@ -24,7 +24,7 @@ public class Conversion_a_Postfijo {
     
     
     
-  static String conversion(String expresionMatematica){// metodo statico para convetri de infija a postfija
+  public static String conversion(String expresionMatematica){// metodo statico para convetri de infija a postfija
         String expresionPost="";// uso de de una variable para realizar la convercion
         Stack<Character> stack=new Stack<>();// se contruye una pila de caracter
         for(int i=0; i< expresionMatematica.length(); i++){// se recorre la expresion a convertir que entra como parametro del metodo conversion
@@ -84,7 +84,7 @@ public class Conversion_a_Postfijo {
     
     
     //metodo para ver el nivel de jereraquia de los operadores
-    static int nivelJerarquico(char operador){
+    public static int nivelJerarquico(char operador){
         switch(operador){
         case '+':
         case '-':
@@ -106,4 +106,3 @@ public class Conversion_a_Postfijo {
 
 
 }
-/////

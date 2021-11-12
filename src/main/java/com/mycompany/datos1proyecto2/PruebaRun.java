@@ -12,12 +12,21 @@ public class PruebaRun {
     public static void main(String args[]){
         String expresion, resultado;
         double solucion;
+         ExpressionTree et = new ExpressionTree();
+        
         
         expresion=JOptionPane.showInputDialog("introduzca la expresion matematica");
         resultado=Conversion_a_Postfijo.conversion(expresion);
+        
+        
         solucion=Solucion.resolution(resultado);
-        JOptionPane.showMessageDialog(null, resultado);
-         JOptionPane.showMessageDialog(null, solucion);
+        char[] charArray = resultado.toCharArray();
+        Node root = et.constructTree(charArray); 
+        et.inorder(root);
+        
+        
+        //JOptionPane.showMessageDialog(null, resultado);
+         //JOptionPane.showMessageDialog(null, solucion);
         
         
         
