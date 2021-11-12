@@ -55,7 +55,7 @@ public class ExpressionTree {
             recorrer(t.right);
         }
     }
-    String get_datos(){
+    String get_datos(){// se obtiene los datos de la operacion
     
     return resultado;
     }

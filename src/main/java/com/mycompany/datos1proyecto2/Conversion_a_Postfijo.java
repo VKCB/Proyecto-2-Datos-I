@@ -38,7 +38,7 @@ public class Conversion_a_Postfijo {
             
             }// fin del while
                
-             stack.push(caracter);
+             stack.push(caracter);// se agrega el caracter al stack
             
             }// fin del if
           
@@ -47,10 +47,10 @@ public class Conversion_a_Postfijo {
         
         
         
-        else if(caracter==')'){
+        else if(caracter==')'){ // quita los parentesis de cierre
             char aux=stack.pop();
             while(aux!='('){
-                expresionPost+=aux;
+                expresionPost+=aux; /// quita los parentesis de abertura
                 aux=stack.pop();
                
             }// fin del while
@@ -85,14 +85,14 @@ public class Conversion_a_Postfijo {
     
     //metodo para ver el nivel de jereraquia de los operadores
   public  static int nivelJerarquico(char operador){
-        switch(operador){
+        switch(operador){// los operadores de suma y resta tiene un valor jerarquico de 1
         case '+':
         case '-':
             return 1;
             
         case '*':
         case '/':
-            return 2;
+            return 2;// tiene un valor de dos en el rango jerarquico tiene mas valor estas operaciones
    }
     return -1;
     
