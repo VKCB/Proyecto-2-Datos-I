@@ -12,7 +12,7 @@
         
         Nombre:<%=request.getParameter("nombre")%>
         <br></br>
-        <form action="Calculadora.html">
+        <form action="calculos.html">
             
             
             
