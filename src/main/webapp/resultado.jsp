@@ -18,7 +18,7 @@
         <h3> El resutlado de la expresion matematica que ha ingresado es : <%String post=Conversion_a_Postfijo.conversion(request.getParameter("calculo"));%> 
             <%=Solucion.resolution(post)%>
         </h3>
-        <form action="calcuos.html">
+        <form action="calculos.html">
            <input type="submit" value="volver ">
             
         </form>>
